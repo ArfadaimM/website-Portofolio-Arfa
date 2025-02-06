@@ -7,7 +7,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const email = formData.get("email");
   const message = formData.get("message");
   emailjs
-    .send("service_bcqxs3p", "template_jtf88ce", { //ganti dengan service_id dan template_id
+    .send("service_bcqxs3p", "template_slcte43", { //ganti dengan service_id dan template_id
       from_name: name,
       reply_to: email,
       message: message,
