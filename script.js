@@ -1,4 +1,4 @@
-emailjs.init("RpdThMJoc5QtzoBZi"); // ganti dengan Public Key Anda
+emailjs.init("your_public_key_here"); // Ganti dengan Public Key Anda
 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault(); // Mencegah reload halaman
@@ -7,7 +7,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const email = formData.get("email");
   const message = formData.get("message");
   emailjs
-    .send("service_bcqxs3p", "template_slcte43", { //ganti dengan service_id dan template_id
+    .send("your_service_id_here", "your_template_id_here", { // Ganti dengan Service ID dan Template ID Anda
       from_name: name,
       reply_to: email,
       message: message,
@@ -18,7 +18,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         title: "Pesan Terkirim!",
         text: "Pesan Anda telah berhasil dikirim. Kami akan segera menghubungi Anda.",
       });
-      e.target.reset(); // reset form setelah pengiriman
+      e.target.reset(); // Reset form setelah pengiriman
     })
     .catch((error) => {
       Swal.fire({
