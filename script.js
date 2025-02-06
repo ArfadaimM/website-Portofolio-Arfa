@@ -1,4 +1,4 @@
-emailjs.init("your_public_key_here"); // Ganti dengan Public Key Anda
+emailjs.init("RpdThMJoc5QtzoBZi"); // Ganti dengan Public Key Anda
 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault(); // Mencegah reload halaman
@@ -7,7 +7,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const email = formData.get("email");
   const message = formData.get("message");
   emailjs
-    .send("your_service_id_here", "your_template_id_here", { // Ganti dengan Service ID dan Template ID Anda
+    .send("service_bcqxs3p", "template_slcte43", { // Ganti dengan Service ID dan Template ID Anda
       from_name: name,
       reply_to: email,
       message: message,
