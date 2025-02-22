@@ -391,51 +391,65 @@
     gap: 10rem;
     background-color: var(--bg-color);
     color: var(--text-color);
-  }
-  
-  .skill h2 {
+}
+
+.skill h2 {
     font-size: 6rem;
     font-weight: 600;
     color: var(--main-color);
     margin-bottom: 4rem;
-  }
-  
-  .skill .container-skill {
+    text-align: center;
+}
+
+.skill .container-skill {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
-  }
-  
-  .skill .card {
-    width: 100px;
-    height: 100px;
+    text-align: center;
+}
+
+.skill .card {
+    width: 120px;
+    height: 160px; /* Ditambah tinggi agar ada ruang lebih */
     margin-top: 10px;
     background-color: var(--second-bg-color);
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 0 25px var(--main-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .skill .card-body {
+}
+
+.skill .card-body {
     padding: 0;
-  }
-  
-  .skill .card:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
-      0 0 100px var(--main-color);
-  }
-  
-  .skill .skill-icon {
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+}
+
+.skill .skill-icon {
     width: 80px;
     height: 80px;
     object-fit: contain;
     border-radius: 10px;
-  }
+}
+
+.skill .skill-text {
+    font-size: 1.3rem; /* Ukuran font diperbesar */
+    font-weight: 700; /* Ditebalkan */
+    color: var(--text-color);
+    margin-top: 15px; /* Diperbesar jaraknya dari gambar */
+    text-align: center;
+}
+
   
   .contact {
     padding: 10rem 12%;
@@ -663,4 +677,6 @@
       max-width: 50%;
       box-sizing: border-box;
     }
+
+    
   }
